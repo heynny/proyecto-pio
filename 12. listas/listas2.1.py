@@ -10,10 +10,10 @@ def addTask(tareas):
 def showTasks(tareas):
     print("------------------ Mostrar Tareas -------------------")
     if not tareas:
-    print("No hay tareas")
+        print("No hay tareas")
     else:
     # los <20 son para que haya un espacio entre cada título
-    print(f"{'Numero':<10} {'Titulo':<20} {'Descripcion':<20} {'Prioridad':<20}")
+        print(f"{'Numero':<10} {'Titulo':<20} {'Descripcion':<20} {'Prioridad':<20}")
     for i, tarea in enumerate(tareas):
         print(f"{i+1:<10}{tarea['titulo']:<20} {tarea['descripcion']:<20} {tarea['prioridad']:<20}")
 
@@ -26,28 +26,28 @@ def sortTasks(tareas):
 def deleteTask(tareas):
     print("------------------ Eliminar Tarea -------------------")
     if not tareas:
-    print("No hay tareas")
+        print("No hay tareas")
     else:
-    tarea = input("Ingrese el titulo de la tarea a eliminar:\n")
+        tarea = input("Ingrese el titulo de la tarea a eliminar:\n")
     for title in tareas:
         if title['titulo'] == tarea:
-        tareas.remove(title)
+            tareas.remove(title)
         print("Tarea eliminada con exito!!!")
         break
 
 def updateTask(tareas):
     print("------------------ Actualizar Tarea -------------------")
     if not tareas:
-    print("No hay tareas")
+        print("No hay tareas")
     else:
-    tarea = input("Ingrese el titulo de la tarea a actualizar:\n")
+        tarea = input("Ingrese el titulo de la tarea a actualizar:\n")
     for title in tareas:
         if title['titulo'] == tarea:
-        title['titulo'] = input("Ingrese el nuevo titulo de la tarea:\n")
-        title['descripcion'] = input("Ingrese la nueva descripcion de la tarea:\n")
-        title['prioridad'] = input("Ingrese la nueva prioridad de la tarea:\n")
-        print("Tarea actualizada con exito!!!")
-        break
+            title['titulo'] = input("Ingrese el nuevo titulo de la tarea:\n")
+            title['descripcion'] = input("Ingrese la nueva descripcion de la tarea:\n")
+            title['prioridad'] = input("Ingrese la nueva prioridad de la tarea:\n")
+            print("Tarea actualizada con exito!!!")
+            break
 
 def menu():
     print("1. Añadir Tarea")
@@ -66,10 +66,12 @@ def main():
     print("------------Bienvenidos al Gestor de Tareas-------------")
     menu()
     while True:
-    opcion = int(input("Ingrese la opcion:\n"))
+        opcion = int(input("Ingrese la opcion:\n"))
+
     if 0 < opcion < 7 :
-    if opcion == 1:
-        addTask(tareas)
+
+        if opcion == 1:
+            addTask(tareas)
     elif opcion == 2:
         showTasks(tareas)
     elif opcion == 3:
@@ -79,9 +81,12 @@ def main():
     elif opcion == 5:
         sortTasks(tareas)
     elif opcion == 6:
-    print("Hasta luego!!!")
+        print("Hasta luego!!!")
     break
+    
+
+
     else:
-print("Opcion invalida")
+     print("Opcion invalida")
 
 main()

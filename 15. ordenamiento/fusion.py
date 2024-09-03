@@ -31,6 +31,7 @@ def merge_sort(liasta):
             lista[k]= izquierda[j]
             j+=1
             k+= 1
+            
 
 
 

@@ -69,5 +69,6 @@ def menu():
             break
         else:
             print("Opcion invalida. Intenta de nuevo")
+            
 
 menu()

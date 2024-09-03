@@ -133,6 +133,7 @@ def main():
         else:
             print("opcion no valida..... enter para continmuar")
             limpiar_terminal()
+            
 
 
 main()

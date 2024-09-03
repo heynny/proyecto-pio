@@ -11,4 +11,5 @@ lista = [5,8,2,1,4,7,3,6,9]
 x=4
 resultado = busqueda_lineal(lista,x)
 print(f"Elemento encontrado en el indice{resultado}")
+
 #entre menos datos haya es mas funcional 

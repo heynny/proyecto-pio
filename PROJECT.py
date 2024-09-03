@@ -32,3 +32,4 @@ def addProduct_Cart(name, cant):
         
     except Exception as e:
         print("Se ha presentado un error al añadir al carrito:", e)
+        

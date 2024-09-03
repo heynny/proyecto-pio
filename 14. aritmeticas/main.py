@@ -7,4 +7,5 @@ input()
 limpiar_terminal()
 
 
+
 #os main te permite saber cual es el nombre del sistema operativo

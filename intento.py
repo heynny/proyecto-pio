@@ -29,3 +29,4 @@ while intentos_restantes > 0:
 
     if intentos_restantes == 0:
         print(f"Lo siento, se acabaron los intentos. El número secreto era {numerosecreto}.")
+        

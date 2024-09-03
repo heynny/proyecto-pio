@@ -5,3 +5,4 @@ def limpiar_terminal ():
     else: os.system("clear")
 
 limpiar_terminal()
+

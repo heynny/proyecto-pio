@@ -12,3 +12,5 @@ lista = [5,8,2,1,4,7,3,6,9]
 lista_ordenada = quick_sort(lista)
 print(f"Lista Ordenada con el metodo rapido: {lista_ordenada}")
 
+
+

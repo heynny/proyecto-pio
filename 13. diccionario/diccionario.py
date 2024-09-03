@@ -19,3 +19,4 @@ mi_diccionario["nombre"] = "David" #Actualizar
 #Interar
 for clave, valor in mi_diccionario.items():
     print(clave, valor)
+    
